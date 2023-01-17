@@ -4,6 +4,8 @@ import FormComponent from './formComponent'
 import FormWitElements from './formWithElements'
 import SimplePortal from './simplePortal'
 import ContextComponent from './contextComponent'
+import ComponentWithHookPractice from './componentWithHookPractice';
+import TestComponent from './hok'
 type TitleProps = {
   title: string,
   test?: string,
@@ -12,7 +14,7 @@ type TitleProps = {
 
 const Title = ({title, test = 'test', test2 = 2}: TitleProps) => <h1>{title} {test} {test2}</h1>;
 
-const App = () => 
+const App:React.FC = () => 
   <>
   <Title title="test" test2={2}/>
   <Counter title={'Class Component Test'} />
@@ -20,6 +22,8 @@ const App = () =>
   <FormWitElements />
   <SimplePortal/>
   <ContextComponent />
+  <ComponentWithHookPractice/>
+  <TestComponent/>
   </>
 
 export default App;
