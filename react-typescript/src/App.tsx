@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from './classComponent';
 import FormComponent from './formComponent'
+import FormWitElements from './formWithElements'
 
 type TitleProps = {
   title: string,
@@ -15,6 +16,7 @@ const App = () =>
   <Title title="test" test2={2}/>
   <Counter title={'Class Component Test'} />
   <FormComponent />
+  <FormWitElements />
   </>
 
 export default App;

@@ -5,7 +5,7 @@ const FormComponent = () => {
     const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
         console.log(e.currentTarget);
       }
-    
+  
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log('Submitted!');
