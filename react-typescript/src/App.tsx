@@ -2,7 +2,8 @@ import React from 'react';
 import Counter from './classComponent';
 import FormComponent from './formComponent'
 import FormWitElements from './formWithElements'
-
+import SimplePortal from './simplePortal'
+import ContextComponent from './contextComponent'
 type TitleProps = {
   title: string,
   test?: string,
@@ -17,6 +18,8 @@ const App = () =>
   <Counter title={'Class Component Test'} />
   <FormComponent />
   <FormWitElements />
+  <SimplePortal/>
+  <ContextComponent />
   </>
 
 export default App;
